@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My eggs</title>
+    
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- ICONS BOXICONS -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="washAway"></div>
+
+    <div class="preloader">
+        <div class="progressBar">
+            <div class="progressOfProgressBar"></div>
+        </div>
+        <h4 class="questionPre"></h4>
+    </div>
+    <!-- ===== HEADER =====-->
+  <div class="kok">
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <a href="#" class="nav__logo"><img src="./assets/img/Logo.png" alt="" style="width: 40px !important;"><a>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-menu-alt-right'></i>
+                    </div>
+
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+
+                            <li class="nav__item"><a href="#section" class="nav__link">Home</a></li>
+                            <li class="nav__item"><a href="#section1" class="nav__link">About Us</a></li>
+                           
+                            <li class="nav__item"><a href="#section2" class="nav__link">Roadmap</a></li>
+                            <li class="nav__item"><a
+                                    href="./assets/img/MYEGGS_2.pdf"
+                                    class="nav__link">WhitePaper</a></li>
+                            <li class="nav__item"><a href="#section4" class="nav__link">Mint</a></li>
+                            <li class="nav__item"><a href="#whitelist" class="nav__link">Whitelist</a></li>
+                            <li class="nav__item"><a href="#section5" class="nav__link">FAQs</a></li>
+
+                        </ul>
+                    </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===== HOME =====-->
+        <div class="home" id="section">
+            <div class="parallax home__parallax home__parallax-img1" data-rellax-speed="-9"></div>
+            <div class="parallax home__parallax home__parallax-img2" data-rellax-speed="-7"></div>
+            <div class="parallax home__parallax home__parallax-img3" data-rellax-speed="-6"></div>
+            <div class="parallax home__parallax home__parallax-img4" data-rellax-speed="-3"></div>
+
+            <h1 class="parallax home__title" data-rellax-speed="-6">My Eggs</h1>
+            <span class="parallax home__subtitle" data-rellax-speed="-5">Premint in:</span>
+            <!-- Display the countdown timer in an element -->
+            <span class="parallax home__subtitle yo1" data-rellax-speed="-4" >To Be Announced</span>
+
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Jan 1, 2022 4:41:00").getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function () {
+
+                    // Get today's date and time
+                    var now = new Date().getTime();
+
+                    // Find the distance between now and the count down date
+                    var distance = countDownDate - now;
+
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    // Display the result in the element with id="demo"
+                    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                        + minutes + "m " + seconds + "s ";
+
+                    // If the count down is finished, write some text
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "EXPIRED";
+                    }
+                }, 1000);
+            </script>
+
+            <div class="home__scroll">
+                <a href="#section1"><i class='bx bx-mouse'></i></a>
+            </div>
+        </div>
+
+        <!-- ===== SECTION =====-->
+       
+            <section class="j-section" id="section1">
+                <div class="section">
+                    <img class="bgImage" src="./assets/img/background.png" alt="bg">
+                    <div class="section__data">
+                        <div data-aos="fade-up">
+                        <h2 class="section__title">MyEggs NFT</h2>
+                    </div>
+                        <p class="section__text">My Eggs are a total of 5,555 unique digital collectibles
+                            programmatically
+                            generated using an open-source Python script.Myeggs used in a generative art project with
+                            custom
+                            on-chain and cryptographically secure provenance.</p>
+                            
+                        <div class="button">
+                            <button type="button" class="btn btn-primary"><a href="https://discord.gg/zJEYCFH5">Discord</a></button>
+                            <button type="button" class="btn btn-primary"><a href="https://twitter.com/MyEggsNFT">Twitter</a></button>
+                        </div>
+                    </div>
+
+                    <img src="./assets/img/card.gif" alt="lol" class="section__img">
+                </div>
+                
+                <div class="container">
+                    <h1 class="k">Our Team</h1>
+                    <div class="profiles">
+                        <div class="profile">
+                            <img src="./assets/img/addarg7.png" class="profile-img">
+
+                            <h3 class="user-name">Addarg7</h3>
+                            <h5>Creative Developer</h5>
+
+                        </div>
+                        <div class="profile">
+                            <img src="./assets/img/Bright.jpg" class="profile-img">
+
+                            <h3 class="user-name">Bright</h3>
+                            <h5>Creative Developer</h5>
+
+                        </div>
+                        <div class="profile">
+                            <img src="./assets/img/ZH_Architect_Founder.jpg"
+                                class="profile-img">
+
+                            <h3 class="user-name">Zh</h3>
+                            <h5>Founder</h5>
+
+                        </div>
+                    </div>
+                    <div class="profiles">
+                        <div class="profile">
+                            <img src="./assets/img/Kizzy.jpg" class="profile-img">
+
+                            <h3 class="user-name">Kizzy</h3>
+                            <h5>Project Manager</h5>
+
+                        </div>
+                        <div class="profile">
+                            <img src="./assets/img/84.png" class="profile-img">
+
+                            <h3 class="user-name">Mayor Defi</h3>
+                            <h5>Project Manager</h5>
+
+                        </div>
+                        <div class="profile">
+                            <img src="./assets/img/Boycope.3d4b5f34.jpg"
+                                class="profile-img">
+
+                            <h3 class="user-name">BoyCope</h3>
+                            <h5>Co-Founder</h5>
+
+                        </div>
+                    </div>
+                </div>
+               
+            </section>
+            <h1 class="k">Gallery</h1>
+         <div class="gallery">
+             
+             <div class="slideshow-container">
+                 <div class="mySlides fade">
+                     <div class="numbertext"></div>
+                     <img src="./assets/img/1.png" style="width:50%">
+                 </div>
+                 <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./assets/img/3.png" style="width:50%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./assets/img/addarg7.png" style="width:50%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./assets/img/78.png" style="width:50%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./assets/img/82.png" style="width:50%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./assets/img/79.png" style="width:50%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./assets/img/96.png" style="width:50%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./assets/img/84.png" style="width:50%">
+                </div>
+                <div class="bu">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+             </div>
+             <span class="dot" onlick="currentSlides(1)"></span>
+             <span class="dot" onlick="currentSlides(2)"></span>
+             <span class="dot" onlick="currentSlides(3)"></span>
+             <span class="dot" onlick="currentSlides(4)"></span>
+             <span class="dot" onlick="currentSlides(5)"></span>
+             <span class="dot" onlick="currentSlides(6)"></span>
+             <span class="dot" onlick="currentSlides(7)"></span>
+             <span class="dot" onlick="currentSlides(8)"></span>
+         </div>
+        <section id="section2" class="section2">
+
+            <h1 class="k">Roadmap</h1>
+            <div class="wrapper">
+                <div class="center-line">
+
+                </div>
+                <div class="row row-1">
+                    <section>
+                        <i class="icon fas fa-home"></i>
+                        <div class="details">
+                            <span class="title">STAGE 1 - CONCEPT - Q4 2021</span>
+
+                        </div>
+                        <p>The concept of 5,555 MyEggs starts to emerge. The founders bring together a
+                            team of a talented artist and developers to make the project alive.</p>
+
+                    </section>
+                </div>
+                <div class="row row-2">
+                    <section>
+                        <i class="icon fas fa-star"></i>
+                        <div class="details">
+                            <span class="title">STAGE 2 - LAUNCH - Q1 2022
+                            </span>
+
+                        </div>
+                        <p>Developing rarity distribution and planning different attributes with a set
+                            percentage to include various rarities for future adopters.
+                            Release 5,555 MyEgg's on the Solana blockchain.
+                            Date/Time will be mentioned accordingly on the website</p>
+
+                    </section>
+                </div>
+                <div class="row row-1">
+                    <section>
+                        <i class="icon fas fa-rocket"></i>
+                        <div class="details">
+                            <span class="title">STAGE 3 - LISTING - Q1 2022</span>
+
+                        </div>
+                        <p>List on all major marketplaces after launch so that all MyEggs adopters are
+                            able to trade in different Solana marketplaces.
+                            Targetted marketplaces: Solsea, Solana Art, Digital Eyes</p>
+
+                    </section>
+                </div>
+                <div class="row row-2">
+                    <section>
+                        <i class="icon fas fa-globe"></i>
+                        <div class="details">
+                            <span class="title">STAGE 4 - COMMUNITY BUILDING - Q1 2022</span>
+
+                        </div>
+                        <p>Out of 5,555 MyEggs NFT's on the Solana Blockchain, 100 eggs will be given
+                            away to influencers for marketing purposes.
+                            55 eggs will be kept aside for VIP's as token of appreciation of their efforts in
+                            building the community.
+                            </p>
+
+                    </section>
+                </div>
+                <div class="row row-1">
+                    <section>
+                        <i class="icon fas fa-paper-plane"></i>
+                        <div class="details">
+                            <span class="title">Stage 5 - Q1 2022</span>
+
+                        </div>
+                        <p>25% of all royalties from trading fees will be sent to a mutual wallet. MyEgg's
+                            holders will be able to vote to choose which cause they'd like to support.
+                            </p>
+
+                    </section>
+                </div>
+                <div class="row row-2">
+                    <section>
+                        <i class="icon fas fa-map-marker-alt"></i>
+                        <div class="details">
+                            <span class="title">Stage 6 - Q1 2022</span>
+
+                        </div>
+                        <p>Starting game staking mechanism using the Star Atlas gaming build on the
+                            Solana ecosystem. Starting off with versus fighting games which allows
+                            players and spectators to bet SOL and win along the way. Beta version
+                            releases will only allow holders to setup a play to earn account giving them
+                            more opportunites in the future</p>
+
+                    </section>
+                </div>
+                <div class="row row-1">
+                    <section>
+                        <i class="icon fas fa-paper-plane"></i>
+                        <div class="details">
+                            <span class="title">Stage 7 - Q2</span>
+
+                        </div>
+                        <p>3 Months down the line a roadmap update will be generated for MyEggs to
+                            safely return to their civilization. The developers with take the responsibility to
+                            ensure that every egg reaches it's destination. Revision of plans along the way
+                            will bring more value to the initial holders of the project</p>
+
+                    </section>
+                </div>
+                <div class="row row-2">
+                    <section>
+                        <i class="icon fas fa-map-marker-alt"></i>
+                        <div class="details">
+                            <span class="title">Stage 8 - Q2</span>
+
+                        </div>
+                        <p>Based on the community, we'll be then introducting new avenues to holders
+                            in the Solana Metaverse. Giving them further more opportunites such as
+                            breading, gaming, token and betting options</p>
+
+                    </section>
+                </div>
+        </section>
+        
+        <section class="whitelist" id="whitelist">
+
+            <div class="whitelist-text">
+                <h2>WHITELIST</h2>
+                <h4>Enter desired NFT amount between 1-10</h4>
+            </div>
+
+            <div class="container">
+              <form action="https://formspree.io/f/xpzbwqey" method="POST" id="Whitelist">
+          
+                <div class="form-group">
+                  <label for="Address" style="color: black;"> Input wallet address</label>
+                  <input type="text" id="address" name="address">
+                </div>
+
+                <div class="form-group">
+                    <label for="Amount" style="color: black;"> Amount of NFT</label>
+                    <input type="number" id="amount" name="amount">
+                </div>
+                <button type="submit">SUBMIT</button>
+              </form>
+            </div>
+            <div id="status"></div>
+        </section>
+        
+        
+        <section id="section5">
+            <div class="lol">
+                <h1 class="k">FAQs</h1>
+                <div class="accordion">
+                    <p class="title">When's the drop?</p>
+                    <span class="show">+</span>
+                </div>
+                <div class="info">
+                    <p>TBA.
+                    </p>
+                </div>
+                <div class="accordion">
+
+                    <p class="title">Is MyEggs a generative art project?</p>
+                    <span class="show">+</span>
+                </div>
+                <div class="info">
+                    <p>Yes, formulating in an NFT Collectors game.
+                    </p>
+                </div>
+                <div class="accordion">
+                    <p class="title">What do I get when I buy a MyEggs NFT?</p>
+                    <span class="show">+</span>
+                </div>
+                <div class="info">
+                    <p>Think of our NFT’s as keys or memberships to our universe. As a member of this universe, you will get access to community rewards and drops, ETH giveaways, exclusive NFT content, beta access to our game, and more.
+                    </p>
+                </div>
+                <div class="accordion">
+                    <p class="title">Is MyEggs a game or a community?</p>
+                    <span class="show">+</span>
+                </div>
+                <div class="info">
+                    <p>It’s both. By owning a MyEggs NFT you get early bird perks!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+    <!-- RELLAX JS -->
+    <script src="./assets/js/rellax.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- MAIN JS -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/preloader.js"></script>
+</body>
+
+</html>
